@@ -1,0 +1,279 @@
+body{
+    background-image: url(../media/top.jpg);
+    /* background-color: darkgray; */
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family:  "Zen Kaku Gothic Antique", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+}
+p{
+    overflow-wrap: break-word;
+}
+#main{
+    margin: 0;
+}
+header{
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    box-shadow: 0px 0px 5px 0px hsla(0, 0%, 7%, 0.3);
+    padding:0 20px 0;
+    display: flex;
+    background-color: #233e5a;
+    z-index:10;
+    margin: 0;
+    top:0;
+    left: 0;
+}
+#menu{
+    position: absolute;
+    right: 50px;
+    display: flex;
+}
+#top_title{
+    display:flex;
+}
+#top_title h4{
+    position: relative;
+    color: whitesmoke;
+    left: -1px;
+    top:-7px;
+}
+.jump{
+    margin-right: 15px;
+    font-size: 14px;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #b9b9b9;
+}
+#space{
+    height: 40px;
+}
+#top{
+    width: 100%;
+    height: 640px;
+    margin: 0;
+}
+#top_text{
+    position: relative;
+    color: white;
+    top:300px;
+    left: 20px;
+    width: 30%;
+}
+#summary{
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+h2{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    margin: 0;
+    width: 40%;
+    color: #233e5a;
+}
+#sub_summary1{
+    /* position: relative;
+    top:50px;
+    bottom:50px; */
+    background-color:#233e5a;
+    margin: 40px;
+    width: auto;
+    height: auto;
+}
+#img_block1{
+    /* position: relative; */
+    width: 70%;
+    height: 70%;
+    margin: 60px;
+    overflow-wrap: normal;
+}
+#img1{
+    width:100%;
+    margin: 0;
+}
+#map1_block{
+    display: grid;
+    place-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+}
+#img1{
+    width:100%;
+    margin: 0;
+}
+#sub_summary2{
+    background-color:#233e5a;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: auto;
+    height: auto;
+}
+#img_block2{
+    /* position: relative; */
+    width: 70%;
+    height: 70%;
+    margin: 60px;
+    overflow-wrap: normal;
+}
+#img2{
+    /* position: absolute; */
+    width:100%;
+    margin: 0;
+}
+
+#flex_block{
+    display: flex;
+    height: auto;
+    width: auto;
+}
+#summary_block{
+    width:40%;
+    margin: 40px;
+    overflow-wrap: normal;
+    color: white;
+}
+#event{
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+#event_block{
+    width: 100%;
+    margin: 0;
+    color: #233e5a;
+}
+#event_block:hover{
+    background-color: #f8f8f8;
+}
+#event_locate{
+    margin: 0;
+    width: 80%;
+    margin: 40px;
+
+}
+#event_img_block{
+    width: 30%;
+    height: 30%;
+}
+#event_img{
+    width:100%;
+    margin: 0;
+}
+#event_info{
+    margin: 40px;
+}
+#event_finish{
+    height: 5px;
+}
+#map{
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+#info{
+    display: grid;
+    place-items: center;
+    background-color: #f8f8f8;
+}
+#gmap{
+    width: 350px;
+    height: 350px;
+}
+#contact{
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#contact_page{
+    color: #233e5a;
+}
+#contact_page:hover{
+    color: #b9b9b9;
+}
+footer{
+    background-color:gray;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    color: white;
+    list-style: none;
+    font-size: 10px;
+}
+/* @media screen and(max-width: 600px) { */
+    @media (max-width: 600px){
+     #flex_block{
+        display: block;
+        position: relative;
+     }
+     #summary_block{
+        width: 80%;
+     }
+  }
+
+/* フェードインの設定---------------------------------------------*/
+.sFade {
+	opacity: 0;
+    height: auto;
+    width: auto;
+}
+
+/*アニメーションを設定*/
+.fadeIn {
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+/*上下の動きを指定*/
+.upDown {
+	transform: translateY(-50px);
+}
+
+.downUp {
+	transform: translateY(50px);
+}
+
+
+/*左右の動きを指定*/
+.slideR {
+	transform: translateX(50px);
+}
+
+.slideL {
+	transform: translateX(-50px);
+}
+
+
+.overflowH {
+	overflow: hidden;
+}
+
+/* -----------------------------------------------------------*/
